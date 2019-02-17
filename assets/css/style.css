@@ -1,6 +1,14 @@
 body {
-    background-image: url("../images/15_star_wars.jpg");
+    background-image: url("assets/images/video/stars-high-720.webm");
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
 
 #starWars {
 
@@ -17,11 +25,13 @@ body {
 }
 
 #hanPar {
-
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 10px;
 }
 
 #hanImg {
-    margin-left: 100px; 
+    margin-left: 10px; 
     background-color: cornsilk; 
     padding: 20px 20px 20px 20px; 
     z-index: 0; 
@@ -38,13 +48,12 @@ body {
     font-weight: bold; 
     float: left;
     position: relative;
-    height: 10px;
-    width: 30px;
-    background-color: cornsilk;
+    text-align: center;
 }
 
 #hanHP {
-
+    position: relative;
+    float: left;
 }
 
 
@@ -57,8 +66,7 @@ body {
 }
 
 #yodaImg{
-    margin-left: 200px; 
-    background-color: cornsilk; 
+    margin-left: 100px; 
     padding: 20px 20px 20px 20px; 
     z-index: 0; 
     float: left; 
@@ -66,9 +74,8 @@ body {
 }
 
 #yodaHP {
-    position: absolute;
-    margin-left: 600px;
-    margin-bottom: 200px;
+    position: relative;
+    float: left;
 }
 
 #darthPar {
@@ -77,7 +84,6 @@ body {
 
 #darthImg {
     margin-left: 300px; 
-    background-color: cornsilk; 
     padding: 20px 20px 20px 20px; 
     z-index: 0; 
     float: left; 
@@ -85,7 +91,10 @@ body {
 }
 
 #darthVaderHP {
-
+    position: relative;
+    float: left;
+    margin-top: 110px;
+    margin-left: 183px;
 }
 
 #bobaFett {
@@ -98,7 +107,6 @@ body {
 
 #bobaImg{
     margin-left: 400px; 
-    background-color: cornsilk; 
     padding: 20px 20px 20px 20px; 
     z-index: 0; 
     float: left; 
@@ -106,7 +114,10 @@ body {
 }
 
 #bobaFettHP {
-
+    position: relative;
+    float: left;
+    margin-top: -100px;
+    margin-left: 133px;
 }
 
 #aButtonPar {

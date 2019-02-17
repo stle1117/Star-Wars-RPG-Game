@@ -1,27 +1,61 @@
 $( document ).ready(function() 
 
+
+//on page load, set default boolean for selected to false for all players
+function startDefaults() {
+$("#hanPar", "#yodaPar", "#darthPar", "#bobaPar").default(function() {
+    selected = false;
+})}
+
+
 //click events for each image div for the user to select their attack player
-    {function initializeGame () {
+//changes selected to true and moves player to attack player position
+    ,function initializeGame () {
 
-    $("#hanPar").on("click", function(selected) {
+    $("#hanPar").click(function(selected) {
         selected = true;
     }
         );
 
-    $("#yodaPar").on("click", function(selected) {
+    $("#yodaPar").click(function(selected) {
         selected = true;
     }
         );
 
-    $("#darthPar").on("click", function(selected) {
+    $("#darthPar").click(function(selected) {
         selected = true;
     }
         );
 
-    $("#bobaPar").on("click", function(selected) {
+    $("#bobaPar").click(function(selected) {
         selected = true;
     }
         );
+
+//click events for each image div for the user to select their enemy to attack
+//changes selected to true and moves player to attack player position
+,function chooseEnemy () {
+
+    $("#hanPar").click(function(selected) {
+        selected = true;
+    }
+        );
+
+    $("#yodaPar").click(function(selected) {
+        selected = true;
+    }
+        );
+
+    $("#darthPar").click(function(selected) {
+        selected = true;
+    }
+        );
+
+    $("#bobaPar").click(function(selected) {
+        selected = true;
+    }
+        );
+
 
 //contain all options of characters in an object - connect the DOM element with each nested object
 var allCharacters = {
@@ -75,6 +109,8 @@ var character = allCharacters
 initializeGame()
 
 selectCharacter()
+
+chooseEnemy()
 //loop through the object to select player for playing based on on-click event
 
 

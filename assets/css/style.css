@@ -2,8 +2,125 @@ body {
     background-image: url("../images/15_star_wars.jpg");
 }
 
+#starWars {
+
+}
+
+
+#starWarsFadeIn {
+
+}
+
+
+#hanSolo {
+
+}
+
+#hanPar {
+
+}
+
+#hanImg {
+    margin-left: 100px; 
+    background-color: cornsilk; 
+    padding: 20px 20px 20px 20px; 
+    z-index: 0; 
+    float: left; 
+    position: absolute;
+
+}
+
+.HP {
+    z-index: 1; 
+    color: green; 
+    margin-left: 55px; 
+    margin-top: 125px; 
+    font-weight: bold; 
+    float: left;
+    position: relative;
+    height: 10px;
+    width: 30px;
+    background-color: cornsilk;
+}
+
+#hanHP {
+
+}
+
+
+#yoda {
+
+}
+
+#yodaPar {
+
+}
+
+#yodaImg{
+    margin-left: 200px; 
+    background-color: cornsilk; 
+    padding: 20px 20px 20px 20px; 
+    z-index: 0; 
+    float: left; 
+    position: absolute;
+}
+
 #yodaHP {
     position: absolute;
     margin-left: 600px;
     margin-bottom: 200px;
+}
+
+#darthPar {
+
+}
+
+#darthImg {
+    margin-left: 300px; 
+    background-color: cornsilk; 
+    padding: 20px 20px 20px 20px; 
+    z-index: 0; 
+    float: left; 
+    position: absolute;
+}
+
+#darthVaderHP {
+
+}
+
+#bobaFett {
+
+}
+
+#bobaPar {
+
+}
+
+#bobaImg{
+    margin-left: 400px; 
+    background-color: cornsilk; 
+    padding: 20px 20px 20px 20px; 
+    z-index: 0; 
+    float: left; 
+    position: absolute;
+}
+
+#bobaFettHP {
+
+}
+
+#aButtonPar {
+
+}
+
+#attackButton {
+
+}
+
+#rButtonPar {
+
+}
+
+#resetButton {
+
 }

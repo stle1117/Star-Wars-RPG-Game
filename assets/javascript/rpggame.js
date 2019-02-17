@@ -30,7 +30,6 @@ var allCharacters = {
        health_points: 120,
        attack_loss: 5,
        attack_points: 10,
-       selected: false,
        attacked_text: "Han Solo lost 5 health points.",
        attack_text: "Han Solo attacked for 10 points."
 
@@ -41,7 +40,6 @@ var allCharacters = {
         health_points: 100,
         attack_loss: 10,
         attack_points: 15,
-        selected: false,
         attacked_text: "Yoda lost 10 health points.",
         attack_text: "Yoda attacked for 15 points.",
 
@@ -52,7 +50,6 @@ var allCharacters = {
         health_points: 80,
         attack_loss: 20,
         attack_points: 5,
-        selected: false,
         attacked_text: "Darth Vader lost 5 health points.",
         attack_text: "Darth Vader attacked for 10 points.",
 
@@ -63,7 +60,6 @@ var allCharacters = {
         health_points: 70,
         attack_loss: 15,
         attack_points: 10,
-        selected: false,
         attacked_text: "Bobba Fett lost 15 health points.",
         attack_text: "Bobba Fett attacked for 10 points."
 

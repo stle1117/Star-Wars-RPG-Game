@@ -2,6 +2,17 @@ body {
     background-image: url("assets/images/video/stars-high-720.webm");
 }
 
+.HP {
+    z-index: 1; 
+    color: green; 
+    margin-left: 55px; 
+    margin-top: 125px; 
+    font-weight: bold; 
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -26,13 +37,11 @@ body {
 
 #hanPar {
     position: absolute;
-    margin-left: 250px;
-    margin-top: 10px;
+    margin-left: 150px;
 }
 
 #hanImg {
-    margin-left: 10px; 
-    background-color: cornsilk; 
+    margin-left: 10px;  
     padding: 20px 20px 20px 20px; 
     z-index: 0; 
     float: left; 
@@ -40,20 +49,11 @@ body {
 
 }
 
-.HP {
-    z-index: 1; 
-    color: green; 
-    margin-left: 55px; 
-    margin-top: 125px; 
-    font-weight: bold; 
-    float: left;
-    position: relative;
-    text-align: center;
-}
-
 #hanHP {
     position: relative;
     float: left;
+    margin-top: 5px;
+    margin-left: 30px;
 }
 
 
@@ -62,11 +62,9 @@ body {
 }
 
 #yodaPar {
-
 }
 
 #yodaImg{
-    margin-left: 100px; 
     padding: 20px 20px 20px 20px; 
     z-index: 0; 
     float: left; 
@@ -76,14 +74,15 @@ body {
 #yodaHP {
     position: relative;
     float: left;
+    margin-top: 5px;
+    margin-left: 30px;
 }
 
 #darthPar {
-
+ margin-left: -200px;
 }
 
 #darthImg {
-    margin-left: 300px; 
     padding: 20px 20px 20px 20px; 
     z-index: 0; 
     float: left; 
@@ -93,8 +92,8 @@ body {
 #darthVaderHP {
     position: relative;
     float: left;
-    margin-top: 110px;
-    margin-left: 183px;
+    margin-top: 5px;
+    margin-left: 30px;
 }
 
 #bobaFett {
@@ -102,11 +101,10 @@ body {
 }
 
 #bobaPar {
-
+    margin-left: 80px;
 }
 
 #bobaImg{
-    margin-left: 400px; 
     padding: 20px 20px 20px 20px; 
     z-index: 0; 
     float: left; 
@@ -116,8 +114,8 @@ body {
 #bobaFettHP {
     position: relative;
     float: left;
-    margin-top: -100px;
-    margin-left: 133px;
+    margin-top: 5px;
+    margin-left: 30px;
 }
 
 #aButtonPar {

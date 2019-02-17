@@ -120,16 +120,19 @@ body {
 
 #aButtonPar {
 
+    clear: left;
+    margin-top: 250px;
+    margin-left: 570px;
 }
 
 #attackButton {
-
+    clear: left;
 }
 
 #rButtonPar {
-
+    clear: left;
 }
 
 #resetButton {
-
+    clear: left;
 }

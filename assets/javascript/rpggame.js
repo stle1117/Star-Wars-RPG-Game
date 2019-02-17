@@ -1,29 +1,29 @@
 $( document ).ready(function() 
 
-//click events for each image div
+//click events for each image div for the user to select their attack player
     {function initializeGame () {
 
-    $("#hanSolo").on("click", function(selected) {
+    $("#hanPar").on("click", function(selected) {
         selected = true;
     }
         );
 
-    $("#yoda").on("click", function(selected) {
+    $("#yodaPar").on("click", function(selected) {
         selected = true;
     }
         );
 
-    $("#darthVader").on("click", function(selected) {
+    $("#darthPar").on("click", function(selected) {
         selected = true;
     }
         );
 
-    $("#bobaFett").on("click", function(selected) {
+    $("#bobaPar").on("click", function(selected) {
         selected = true;
     }
         );
 
-//contain all options of characters in an object
+//contain all options of characters in an object - connect the DOM element with each nested object
 var allCharacters = {
     han = {
        img: "assets/images/Han_Solo.jpg",
@@ -75,9 +75,12 @@ var character = allCharacters
 initializeGame()
 
 selectCharacter()
+//loop through the object to select player for playing based on on-click event
 
 
-//loop through the object to select player for playing
+
+//if else for selected player and moving enemies to a different location within the DOM
+
 
 
 
@@ -91,16 +94,15 @@ function attack () {
             }
 
 
-//declare function for checking the score
+//declare function for checking the score each time
 
 if (this.character.new_health_points >= 0)
     playGame()
 }
 
-else if, (this.character.new_health_points <=0)
+else if, (this.character.new_health_points <= 0)
     winsVsLosses()
 }
-
 
 //if...else for wins vs. losses
 

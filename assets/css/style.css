@@ -134,10 +134,12 @@ body {
     clear: left;
     margin-top: 320px;
     margin-left: 145px;
+    position: absolute;
 
 }
 
 #resetButton {
     clear: left;
     z-index: 1;
+    position: absolute;
 }

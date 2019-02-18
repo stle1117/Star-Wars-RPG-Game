@@ -1,64 +1,7 @@
 $( document ).ready(function() 
 
-
-//on page load, set default boolean for selected to false for all players
-function startDefaults() {
-$("#hanPar", "#yodaPar", "#darthPar", "#bobaPar").default(function() {
-    selected = false;
-})}
-
-
-//click events for each image div for the user to select their attack player
-//changes selected to true and moves player to attack player position
-    ,function initializeGame () {
-
-    $("#hanPar").click(function(selected) {
-        selected = true;
-    }
-        );
-
-    $("#yodaPar").click(function(selected) {
-        selected = true;
-    }
-        );
-
-    $("#darthPar").click(function(selected) {
-        selected = true;
-    }
-        );
-
-    $("#bobaPar").click(function(selected) {
-        selected = true;
-    }
-        );
-
-//click events for each image div for the user to select their enemy to attack
-//changes selected to true and moves player to attack player position
-,function chooseEnemy () {
-
-    $("#hanPar").click(function(selected) {
-        selected = true;
-    }
-        );
-
-    $("#yodaPar").click(function(selected) {
-        selected = true;
-    }
-        );
-
-    $("#darthPar").click(function(selected) {
-        selected = true;
-    }
-        );
-
-    $("#bobaPar").click(function(selected) {
-        selected = true;
-    }
-        );
-
-
 //contain all options of characters in an object - connect the DOM element with each nested object
-var allCharacters = {
+{var allCharacters = {
     han = {
        img: "assets/images/Han_Solo.jpg",
        health_points: 120,
@@ -105,7 +48,83 @@ var allCharacters = {
 var allCharacters = han, yoda, darthV, bobbaF
 var character = allCharacters
 
+//click events for each image div for the user to select their attack player
+//changes selected to true and moves player to attack player position
+    function initializeGame () {
+
+    $("#hImg").click(function(selected) {
+        selected = true;
+        $(function() {
+            $("#hImg").css("margin-left");
+            $("#hImg").css("margin-left: 150px");
+        })
+    }
+        );
+
+    $("#yImg").click(function(selected) {
+        selected = true;
+        $(function() {
+            $("#yImg").css("margin-left");
+            $("#yImg").css("margin-left: 20px");
+    }
+        );
+
+    $("#dImg").click(function(selected) {
+        selected = true;
+        $(function() {
+            $("#dImg").css("margin-left");
+            $("#dImg").css("margin-left: -50px");
+    }
+        );
+
+    $("#bImg").click(function(selected) {
+        selected = true;
+        $(function() {
+            $("#bImg").css("margin-left");
+            $("#bImg").css("margin-left: -100px");
+    }
+        );
+
+//click events for each image div for the user to select their enemy to attack
+//changes selected to true and moves player to attack player position
+function chooseEnemy () {
+
+    $("#hImg").click(function(selected) {
+        selected = true;
+        $(function() {
+            $("#hImg").css("margin-left");
+            $("#hImg").css("margin-left: 350px");
+    }
+        );
+
+    $("#yImg").click(function(selected) {
+        selected = true;
+        $(function() {
+            $("#yImg").css("margin-left");
+            $("#yImg").css("margin-left: 150px");
+    }
+        );
+
+    $("#dImg").click(function(selected) {
+        selected = true;
+        $(function() {
+            $("#dImg").css("margin-left");
+            $("#dImg").css("margin-left: 150px");
+    }
+        );
+
+    $("#bImg").click(function(selected) {
+        selected = true;
+        $(function() {
+            $("#bImg").css("margin-left");
+            $("#bImg").css("margin-left: 150px");
+    }
+        );
+
+
 //call functions to start the game
+startDefaults()
+
 initializeGame()
 
 selectCharacter()
@@ -115,51 +134,49 @@ chooseEnemy()
 
 
 
-//if else for selected player and moving enemies to a different location within the DOM
 
-
-
-
-//declare function for attacks
+/*declare function for attacks:  on clicking the attack button, for the selected character,
+if the selected character=true, update healthpoints, write the new healthpoint number to the UI,
+and show the attack text for that specific character*/
 function attack () {
     if ($("#attackButton").on("click", function() {
         for (this.character in allCharacters){
             if (character.selected(true));
                 character.new_health_points = (character.health_points - character.attack_loss)
                 $(".HP").text(character.new_health_points);
+                $("attacktext").text(character.attack_text);
+                checkScore();
             }
 
 
 //declare function for checking the score each time
+function checkScore() {
+if (this.character.new_health_points >= 0) {
+    playGame()}
 
-if (this.character.new_health_points >= 0)
-    playGame()
+if (this.character.new_health_points >=0), (this.enemy.new_health_points <= 0) {
+    win = true;
+    winsVsLosses();}
+
+if (this.character.new_health_points <= 0){
+    win = false;
+    winsVsLosses();}
 }
-
-else if, (this.character.new_health_points <= 0)
-    winsVsLosses()
-}
-
 //if...else for wins vs. losses
 
-function winsVsLosses () {
-    if win = true; {
-        $("#resultdiv").text("You WIN!!!!!!");
-    }
+function winsVsLosses() {
+if (win = true); {
+            $("#resultdiv").text("You WIN!!!!!!")}
 
-    else if win = false; {
-        $("#resultdiv").text("Sorry, you lost.  Reset and choose another attacker.")
-    }
+if (win = false); {
+        $("#resultdiv").text("Sorry, you lost.  Reset and choose another attacker.")}
 }
-
-
 
 //reset moveToStart
 
     function moveToStart() {
 
     }
-
 
 
 //reset button visible
@@ -171,9 +188,7 @@ function reset(); {
 }
 
 
-
 //reset button resets the game
-
 
 initializeGame();
 

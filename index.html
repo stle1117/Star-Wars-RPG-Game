@@ -10,16 +10,17 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
       <!--Added links to reset, stylesheet, and bootstrap-->
-      <link rel="stylesheet" href="assets/css/reset.css">
       <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/reset.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 </head>
 <body>
 
-        <video autoplay muted loop id="myVideo">
-                <source src="assets/images/video/stars-high-720.webm" type="video/webm">
-              </video>
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/images/video/stars-high-720.webm" type="video/webm">
+      </video>
+
     <div class="container">
         <div class="row">
             <div class="col-md" id="starWars">
@@ -33,7 +34,7 @@
             <div class="col-md" id="hanSolo">
                 <div id="hanPar">
                     <div id="hanImg">
-                        <div><img src="assets/images/Han_Solo.jpg" alt="Han Solo Image" style="height: 150px; width: 90px"></div>
+                        <div id="hImg"><img src="assets/images/Han_Solo.jpg" alt="Han Solo Image" style="height: 150px; width: 90px"></div>
                         <div class="HP" id="hanHP">
                             <p>120</p>
                         </div>
@@ -44,7 +45,7 @@
             <div class="col-md" id="yoda">
                 <div id="yodaPar">
                     <div id="yodaImg">
-                        <div><img src="assets/images/Yoda.jpg" alt="Yoda Image" style="height: 150px; width: 90px"></div>
+                        <div id="yImg"><img src="assets/images/Yoda.jpg" alt="Yoda Image" style="height: 150px; width: 90px"></div>
                         <div class="HP" id="yodaHP">
                             <p>100</p>
                         </div>
@@ -55,7 +56,7 @@
             <div class="col-md" id="darthVader">
                 <div id="darthPar">
                     <div id="darthImg">
-                        <div><img src="assets/images/Darth_Vader.jpg" alt="Darth Vader Image" style="height: 150px; width: 90px"></div>
+                        <div id="dImg"><img src="assets/images/Darth_Vader.jpg" alt="Darth Vader Image" style="height: 150px; width: 90px"></div>
                     <div class="HP" id="darthVaderHP">
                         <p>80</p>
                     </div>
@@ -65,7 +66,7 @@
             <div class="col-md" id="bobaFett">
                 <div id="bobaPar">
                     <div id="bobaImg">
-                        <div><img src="assets/images/Boba Fett.jpg" alt="Boba Fett Image" style="height: 150px; width: 90px"></div>
+                        <div id="bImg"><img src="assets/images/Boba Fett.jpg" alt="Boba Fett Image" style="height: 150px; width: 90px"></div>
                     <div class="HP" id="bobaFettHP">
                         <p>70</p>
                     </div>
@@ -82,10 +83,12 @@
                         </a>
                         <p id="attackText"></p>
                     </div>
+                <div class="col-md-4">
                     <div id="rButtonPar">
                         <a>
-                            <input class="btn btn-warning" id="resetButton" type="reset" value="Reset" role="button">
+                            <input class="btn btn-danger" id="resetButton" type="reset" value="Reset" role="button">
                         </a>
+                        <p id="resetText"></p>
                     </div>
                 </div>
             </div>
@@ -93,11 +96,9 @@
         </div>
 
 
+    <!-- Added javascript file-->
+    <script type="text/javascript" src="assets/javascript/rpggame.js"></script>
 
-
-
-
-    <script src="assets/javascript/rpggame.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

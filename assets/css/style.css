@@ -1,5 +1,5 @@
 body {
-    background-image: url("assets/images/video/stars-high-720.webm");
+   /*background-image: url("assets/images/video/stars-high-720.webm");*/
 }
 
 .HP {
@@ -22,7 +22,7 @@ body {
     min-height: 100%;
   }
 
-#starWars {
+#fade {
     margin-left: 385px;
 }
 

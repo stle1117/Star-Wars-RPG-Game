@@ -1,17 +1,5 @@
 $(document).ready(function(){
 
-
-    $("#fade").hide();
-    //fade in star wars image on start button click
-    function startFade() {
-
-    $("#startButton").click(function() {
-        $("#fade").fadeIn("slow", function() {
-        console.log("works");
-        });
-    });
-
-
     var hanStartingHP = 120
     var yodaStartingHP = 100
     var darthStartingHP = 80
@@ -32,7 +20,6 @@ $(document).ready(function(){
 //contain all options of characters in nested objects
 var allCharacters = {
     id1:  {
-           name: Han,
            img: "assets/images/Han_Solo.jpg",
            health_points: 0,
            attack_loss: 5,
@@ -45,7 +32,6 @@ var allCharacters = {
     
     
     id2: {
-            name: yoda,
             img: "assets/images/Yoda.jpg",
             health_points: 0,
             attack_loss: 10,
@@ -57,7 +43,6 @@ var allCharacters = {
          },
     
     id3: {
-            name: darthV,
             img: "assets/images/Darth_Vader.jpg",
             health_points: 0,
             attack_loss: 20,
@@ -69,7 +54,6 @@ var allCharacters = {
          },
     
     id4: {
-            name: bobbaF,
             img: "assets/images/Boba_Fett.jpg",
             health_points: 0,
             attack_loss: 15,
@@ -102,19 +86,18 @@ var allCharacters = {
 
 function selectCharacter() {
         $("#hImg").click(function() {
-            selectCharacter = allCharacters.id1;
-
+            chosenCharacter = allCharacters.id1;
+            
         $("#yImg").click(function() {
-            selectCharacter = allCharacters.id2;
+            chosenCharacter = allCharacters.id2;
     
         $("#dImg").click(function() {
-            selectCharacter = allCharacters.id3;
+            chosenCharacter = allCharacters.id3;
 
         $("#bImg").click(function() {
-            selectCharacter = allCharacters.id4;
+            chosenCharacter = allCharacters.id4;
     })
 })
-
 
 /*declare function for attacks:  on clicking the attack button, for the selected character,
 if the selected character=true, update healthpoints, write the new healthpoint number to the UI,
@@ -173,12 +156,12 @@ if (win === false); {
 
 //call functions tostart and initialize the game
 
-
-(startFade()
 (startGame())
 
 (initializeGame())
 
+(selectCharacter())
+
 (attack()
 
-))};
+))}})})}}})

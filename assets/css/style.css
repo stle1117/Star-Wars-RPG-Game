@@ -1,7 +1,3 @@
-body {
-   /*background-image: url("assets/images/video/stars-high-720.webm");*/
-}
-
 .HP {
     z-index: 1; 
     color: green; 
@@ -135,7 +131,7 @@ body {
 #rButtonPar {
     clear: left;
     margin-top: 320px;
-    margin-left: 145px;
+    margin-left: -65px;
     position: absolute;
 
 }
@@ -171,4 +167,14 @@ body {
     color: green;
     font-weight: bold;
     z-index: 1;
+}
+
+#chosen-character {
+    z-index: 1;
+    color: cornsilk;
+}
+
+#defending-character {
+    z-index: 1;
+    color: cornsilk;
 }

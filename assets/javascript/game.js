@@ -21,7 +21,7 @@ $(document).ready(function(){
 var allCharacters = {
     id1:  {
            img: "assets/images/Han_Solo.jpg",
-           health_points: 0,
+           health_points: 120,
            attack_loss: 5,
            attack_points: 10,
            attacked_text: "Han Solo lost 5 health points.",
@@ -33,7 +33,7 @@ var allCharacters = {
     
     id2: {
             img: "assets/images/Yoda.jpg",
-            health_points: 0,
+            health_points: 100,
             attack_loss: 10,
             attack_points: 15,
             attacked_text: "Yoda lost 10 health points.",
@@ -44,7 +44,7 @@ var allCharacters = {
     
     id3: {
             img: "assets/images/Darth_Vader.jpg",
-            health_points: 0,
+            health_points: 80,
             attack_loss: 20,
             attack_points: 5,
             attacked_text: "Darth Vader lost 5 health points.",
@@ -55,7 +55,7 @@ var allCharacters = {
     
     id4: {
             img: "assets/images/Boba_Fett.jpg",
-            health_points: 0,
+            health_points: 70,
             attack_loss: 15,
             attack_points: 10,
             attacked_text: "Bobba Fett lost 15 health points.",
@@ -81,8 +81,9 @@ var allCharacters = {
         $("#dHP").text(DarthHealthPoints);
         
         $("#bHP").text(BobaHealthPoints);
-
-
+    }
+    initializeGame();
+    selectCharacter();
 
 function selectCharacter() {
         $("#hImg").click(function() {
@@ -98,6 +99,8 @@ function selectCharacter() {
             chosenCharacter = allCharacters.id4;
     })
 })
+
+
 
 /*declare function for attacks:  on clicking the attack button, for the selected character,
 if the selected character=true, update healthpoints, write the new healthpoint number to the UI,
@@ -164,4 +167,4 @@ if (win === false); {
 
 (attack()
 
-))}})})}}})
+))}})})}})

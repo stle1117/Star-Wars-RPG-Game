@@ -83,7 +83,7 @@ var allCharacters = {
         $("#bHP").text(BobaHealthPoints);
     }
     initializeGame();
-    selectCharacter();
+
 
 function selectCharacter() {
         $("#hImg").click(function() {
@@ -97,9 +97,10 @@ function selectCharacter() {
 
         $("#bImg").click(function() {
             chosenCharacter = allCharacters.id4;
-    })
-})
 
+    })
+
+    selectCharacter();
 
 
 /*declare function for attacks:  on clicking the attack button, for the selected character,

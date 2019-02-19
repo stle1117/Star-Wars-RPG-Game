@@ -24,11 +24,13 @@ body {
 
 #fade {
     margin-left: 385px;
+    position: relative;
+    z-index: 1;
 }
 
 
 #starWarsFadeIn {
-
+    position: relative;
 }
 
 
@@ -142,4 +144,31 @@ body {
     clear: left;
     z-index: 1;
     position: absolute;
+}
+
+#startText {
+    color: cornsilk;
+    font-weight: bold;
+}
+
+#hHP {
+    color: green;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#yHP {
+    color: green;
+    font-weight: bold;
+    z-index: 1;
+}
+#dHP {
+    color: green;
+    font-weight: bold;
+    z-index: 1;
+}
+#bHP {
+    color: green;
+    font-weight: bold;
+    z-index: 1;
 }

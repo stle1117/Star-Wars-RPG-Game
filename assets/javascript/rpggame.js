@@ -1,13 +1,20 @@
 $(function() {
 
 
-//hide reset button on page load
-    $("#fade").fadeIn("slow");
+//fade in star wars image on start button click
+    $("#startButton").click(function() {
+    $("div").fadeIn(10000);
+    console.log("works");
+});
+
+<video autoplay muted loop id="myVideo">
+<source src="assets/images/video/stars-high-720.webm" type="video/webm">
+</video>
 
 
-//contain all options of characters in an array
-var allCharacters = [
-    {  id: 1,
+//contain all options of characters in nested objects
+var allCharacters = {
+id1:  {
        name: Han,
        img: "assets/images/Han_Solo.jpg",
        health_points: 120,
@@ -16,10 +23,11 @@ var allCharacters = [
        attacked_text: "Han Solo lost 5 health points.",
        attack_text: "Han Solo attacked for 10 points.",
        attacker: false
-
+    
     },
 
-    {   id: 2,
+
+id2: {
         name: yoda,
         img: "assets/images/Yoda.jpg",
         health_points: 100,
@@ -31,7 +39,7 @@ var allCharacters = [
 
      },
 
-    {   id: 3,
+id3: {
         name: darthV,
         img: "assets/images/Darth_Vader.jpg",
         health_points: 80,
@@ -43,7 +51,7 @@ var allCharacters = [
 
      },
 
-     {  id: 4,
+id4: {
         name: bobbaF,
         img: "assets/images/Boba_Fett.jpg",
         health_points: 70,
@@ -54,7 +62,23 @@ var allCharacters = [
         attacker: false
 
      }
-]
+    }
+
+var HanHealthPoints = allCharacters.id1.health_points;
+var YodaHealthPoints = allCharacters.id2.health_points;
+var DarthHealthPoints = allCharacters.id3.health_points;
+var BobaHealthPoints = allCharacters.id4.health_points;
+
+
+function initializeGame() {
+    $("#hHP").text(HanHealthPoints);
+    
+    $("#yHP").text(YodaHealthPoints);
+    
+    $("#dHP").text(DarthHealthPoints);
+    
+    $("#bHP").text(BobaHealthPoints);
+}
 
 
 var chosenCharacter
@@ -70,6 +94,12 @@ function displayInitalCharacters(){
         $('#characters').append(newImage)
     }
 }
+
+for (var key in allCharacters) {
+    for (var key2 in allCharacters[key]) {
+      console.log(key, key2, allCharacters[key][key2]);
+
+      console.log(key + " : " + allCharacters[key].health_points)
 
 displayInitalCharacters()
 
@@ -115,59 +145,61 @@ $(document).on('click', '.each-characters', function(){
 if the selected character=true, update healthpoints, write the new healthpoint number to the UI,
 and show the attack text for that specific character*/
 function attack () {
-    if ($("#attackButton").click(function() {
-        for (this.chosenCharacter in allCharacters){
-            if (chosenCharacter.selected(true));
-                characterNew_health_points = (chosenCharacter.health_points - chosenCharacter.attack_loss)
+    ($("#attackButton").click(function() {
+            chosenCharacter.characterNew_health_points = (chosenCharacter.health_points - chosenCharacter.attack_loss)
                 $(".HP").text(chosenCharacterNew_health_points);
                 $("attacktext").text(chosenCharacter.attack_text);
                 checkScore();
-            }
+            })
 
 
 //declare function for checking the score each time
-function checkScore() {
-if (this.characterNew_health_points >= 0) {
-    playGame()}
+(function checkScore() {
+if (chosenCharacter.characterNew_health_points >= 0) {
+    attack()}
 
-if (this.characterNew_health_points > 0 && this.enemyNew_health_points <= 0) {
+if (chosenCharacter.characterNew_health_points > 0 && this.enemyNew_health_points <= 0) {
     win = true;
     winsVsLosses();}
 
-if (this.character.new_health_points <= 0){
+if (chosenCharacter.characterNew_health_points <= 0){
     win = false;
     winsVsLosses();}
 }
 //if...else for wins vs. losses
 
-function winsVsLosses() {
+(function winsVsLosses() {
 if (win = true); {
             $("#resultdiv").text("You WIN!!!!!!")}
 
 if (win = false); {
         $("#resultdiv").text("Sorry, you lost.  Reset and choose another attacker.")}
-}
+}))
 
 //reset moveToStart
 
-    function moveToStart() {
+    (function moveToStart() {
+        $("#startButton").click(function() {
+            $("div").fadeIn(10000);
+            initializeGame();
+        });
 
     }
 
 
 //reset button visible
 
-function reset(); {
-    if (win = true) {
+(function reset() {
+    if (win === true); {
         moveToStart();
     }
-}
+}))
 
 
 //reset button resets the game
 
-initializeGame();
+(initializeGame())
 
-selectCharacter();
+(selectCharacter())
 
-    }
+    );}

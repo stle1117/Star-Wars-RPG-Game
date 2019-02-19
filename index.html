@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Star Wars RPG</title>
 
-      <!-- Added link to the jQuery Library -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-      <!--Added links to reset, stylesheet, and bootstrap-->
+          <!-- Added link to the jQuery Library -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+      <!--Added links to reset, stylesheet (unnecessary), and bootstrap-->
       <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="stylesheet" href="assets/css/reset.css">
+    <!--  <link rel="stylesheet" href="assets/css/reset.css"> -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 </head>
@@ -24,7 +25,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md" id="starWars">
-                <div id="starWarsFadeIn" style="z-index: 1">
+                <div id="starWarsFadeIn">
                     <div id="fade"><img src="assets/images/Star-Wars2.jpg" alt="star wars picture" style="height: 200px; width: 300px;"></div>
                 </div>
             </div>
@@ -36,7 +37,7 @@
                     <div id="hanImg">
                         <div id="hImg"><img src="assets/images/Han_Solo.jpg" alt="Han Solo Image" style="height: 150px; width: 90px"></div>
                         <div class="HP" id="hanHP">
-                            <p>120</p>
+                            <p id="hHP"></p>
                         </div>
                     </div>
                 </div>
@@ -47,7 +48,7 @@
                     <div id="yodaImg">
                         <div id="yImg"><img src="assets/images/Yoda.jpg" alt="Yoda Image" style="height: 150px; width: 90px"></div>
                         <div class="HP" id="yodaHP">
-                            <p>100</p>
+                            <p id="yHP"></p>
                         </div>
                     </div> 
                 </div>
@@ -58,7 +59,7 @@
                     <div id="darthImg">
                         <div id="dImg"><img src="assets/images/Darth_Vader.jpg" alt="Darth Vader Image" style="height: 150px; width: 90px"></div>
                     <div class="HP" id="darthVaderHP">
-                        <p>80</p>
+                        <p ID="dHP"></p>
                     </div>
                 </div>
             </div>
@@ -68,7 +69,7 @@
                     <div id="bobaImg">
                         <div id="bImg"><img src="assets/images/Boba Fett.jpg" alt="Boba Fett Image" style="height: 150px; width: 90px"></div>
                     <div class="HP" id="bobaFettHP">
-                        <p>70</p>
+                        <p id="bHP"></p>
                     </div>
                 </div>
             </div>
@@ -106,10 +107,21 @@
 
         </div>
 
-
+        <div class="row">
+            <div class="col-md-4">
+                <div id="sButtonPar">
+                    <a>
+                        <input class="btn btn-light" id="startButton" type="button" value="START" role="button"></div>
+                    </a>
+                    <p id="startText">Click Button To Start</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Added javascript file-->
-    <script type="text/javascript" src="assets/javascript/rpggame.js"></script>
+
+    <script src="assets/javascript/game.js"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

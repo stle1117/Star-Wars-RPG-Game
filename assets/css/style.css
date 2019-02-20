@@ -172,9 +172,15 @@
 #chosen-character {
     z-index: 1;
     color: cornsilk;
+    margin-left: 300px;
+    margin-top: 200px;
+    position: absolute;
 }
 
 #defending-character {
     z-index: 1;
     color: cornsilk;
+    margin-left: 700px;
+    margin-top: 200px;
+    position: absolute;
 }

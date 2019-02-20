@@ -89,18 +89,18 @@ var allCharacters = {
 function selectCharacter() {
         $("#hImg").click(function() {
             chosenCharacter = allCharacters.id1;
-            
+
         $("#yImg").click(function() {
             chosenCharacter = allCharacters.id2;
-            console.log("hello");
+ 
 
         $("#dImg").click(function() {
             chosenCharacter = allCharacters.id3;
-            console.log("hello");
+
 
         $("#bImg").click(function() {
             chosenCharacter = allCharacters.id4;
-            console.log("hello");
+
 
 
     })

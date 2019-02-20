@@ -84,30 +84,26 @@ var allCharacters = {
     }
     initializeGame();
 
-    selectCharacter();
-
 function selectCharacter() {
-        $("#hImg").click(function() {
-            chosenCharacter = allCharacters.id1;
+        $("#hhImg").click(function() {
+            $("#hhImg").addClass("moveToSelected");
+        });
 
-        $("#yImg").click(function() {
-            chosenCharacter = allCharacters.id2;
- 
+        $("#yyImg").click(function() {
+            $("#yyImg").addClass("moveToSelected");
+        });
 
-        $("#dImg").click(function() {
-            chosenCharacter = allCharacters.id3;
+        $("#ddImg").click(function() {
+            $("#ddImg").addClass("moveToSelected");
+        });
 
-
-        $("#bImg").click(function() {
-            chosenCharacter = allCharacters.id4;
-
-
-
-    })
+        $("#bbImg").click(function() {
+            $("#bbImg").addClass("moveToSelected");
+        });
+    }
 
 
-})
-
+    selectCharacter();
 
 
 /*declare function for attacks:  on clicking the attack button, for the selected character,
@@ -174,4 +170,4 @@ if (win === false); {
 
 (attack()
 
-))}})})}})
+))}})

@@ -48,6 +48,8 @@
 
 }
 
+
+
 #hanHP {
     position: relative;
     float: left;
@@ -183,4 +185,40 @@
     margin-left: 700px;
     margin-top: 200px;
     position: absolute;
+}
+
+#hImg {
+    position: absolute;
+}
+#yImg {
+    position: absolute;
+}
+
+#dImg {
+    position: absolute;
+}
+
+#bImg {
+    position: absolute;
+}
+
+#hhImg {
+    position: absolute;
+}
+#yyImg {
+    position: absolute;
+}
+
+#ddImg {
+    position: absolute;
+}
+
+#bbImg {
+    position: absolute;
+}
+
+.moveToSelected {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 260px;
 }

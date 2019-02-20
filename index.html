@@ -7,9 +7,6 @@
     <title>Star Wars RPG</title>
 
 
-          <!-- Added link to the jQuery Library -->
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
       <!--Added links to reset, stylesheet (unnecessary), and bootstrap-->
       <link rel="stylesheet" href="assets/css/style.css">
     <!--  <link rel="stylesheet" href="assets/css/reset.css"> -->
@@ -35,7 +32,7 @@
             <div class="col-md" id="hanSolo">
                 <div id="hanPar">
                     <div id="hanImg">
-                        <div id="hImg"><img src="assets/images/Han_Solo.jpg" alt="Han Solo Image" style="height: 150px; width: 90px"></div>
+                        <div id="hImg"><img src="assets/images/Han_Solo.jpg" id="hhImg" alt="Han Solo Image" style="height: 150px; width: 90px"></div>
                         <div class="HP" id="hanHP">
                             <p id="hHP" input></p>
                         </div>
@@ -46,7 +43,7 @@
             <div class="col-md" id="yoda">
                 <div id="yodaPar">
                     <div id="yodaImg">
-                        <div id="yImg"><img src="assets/images/Yoda.jpg" alt="Yoda Image" style="height: 150px; width: 90px"></div>
+                        <div id="yImg"><img src="assets/images/Yoda.jpg" id="yyImg" alt="Yoda Image" style="height: 150px; width: 90px"></div>
                         <div class="HP" id="yodaHP">
                             <p id="yHP"></p>
                         </div>
@@ -57,7 +54,7 @@
             <div class="col-md" id="darthVader">
                 <div id="darthPar">
                     <div id="darthImg">
-                        <div id="dImg"><img src="assets/images/Darth_Vader.jpg" alt="Darth Vader Image" style="height: 150px; width: 90px"></div>
+                        <div id="dImg"><img src="assets/images/Darth_Vader.jpg" id="ddImg" alt="Darth Vader Image" style="height: 150px; width: 90px"></div>
                     <div class="HP" id="darthVaderHP">
                         <p ID="dHP"></p>
                     </div>
@@ -67,7 +64,7 @@
             <div class="col-md" id="bobaFett">
                 <div id="bobaPar">
                     <div id="bobaImg">
-                        <div id="bImg"><img src="assets/images/Boba Fett.jpg" alt="Boba Fett Image" style="height: 150px; width: 90px"></div>
+                        <div id="bImg"><img src="assets/images/Boba Fett.jpg" id="bbImg" alt="Boba Fett Image" style="height: 150px; width: 90px"></div>
                     <div class="HP" id="bobaFettHP">
                         <p id="bHP"></p>
                     </div>
@@ -84,18 +81,18 @@
 </div>
 
 <div>
-    <h2 id="defending-character">Enemy</h2>
+    <h2 id="defending-character">Enemies</h2>
 </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-1">
                     <div id="aButtonPar">
                         <a>
                             <input class="btn btn-light" id="attackButton" type="button" value="ATTACK!" role="button"></div>
                         </a>
                         <p id="attackText"></p>
                     </div>
-                <div class="col-md-4">
+                <div class="col-md-1">
                     <div id="rButtonPar">
                         <a>
                             <input class="btn btn-danger" id="resetButton" type="reset" value="Reset" role="button">
@@ -121,12 +118,15 @@
 
     <!-- Added javascript file-->
 
-    <script src="assets/javascript/game.js"></script>
 
+              <!-- Added link to the jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 </html>

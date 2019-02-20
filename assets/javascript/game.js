@@ -83,8 +83,8 @@ var allCharacters = {
         $("#bHP").text(BobaHealthPoints);
     }
     initializeGame();
-    selectCharacter();
 
+    selectCharacter();
 
 function selectCharacter() {
         $("#hImg").click(function() {
@@ -92,14 +92,19 @@ function selectCharacter() {
             
         $("#yImg").click(function() {
             chosenCharacter = allCharacters.id2;
-    
+            console.log("hello");
+
         $("#dImg").click(function() {
             chosenCharacter = allCharacters.id3;
+            console.log("hello");
 
         $("#bImg").click(function() {
             chosenCharacter = allCharacters.id4;
+            console.log("hello");
+
 
     })
+
 
 })
 
@@ -115,7 +120,6 @@ function attack () {
                 $("attacktext").text(chosenCharacter.attack_text);
                 checkScore();
             })
-
 
 //declare function for checking the score each time
 (function checkScore() {
